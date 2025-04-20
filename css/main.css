@@ -8,14 +8,14 @@
   --low-orange: rgba(245, 117, 43, 0.5);
   --white: #fff;
   --black: #000;
-  
+
   /* Spacing */
   --spacing-xs: 5px;
   --spacing-sm: 10px;
   --spacing-md: 20px;
   --spacing-lg: 30px;
   --spacing-xl: 40px;
-  
+
   /* Font sizes */
   --fs-small: 14px;
   --fs-nav: 15px;
@@ -29,10 +29,9 @@
 ===================================================== */
 @font-face {
   font-family: 'Roboto';
-  src: local('Roboto'),
-       url(/fonts/Roboto-Regular.ttf) format(truetype),
-       url(/fonts/Roboto-Medium.ttf) format(truetype),
-       url(/fonts/Roboto-Bold.ttf) format(truetype);
+  src: local('Roboto'), url(/fonts/Roboto-Regular.ttf) format(truetype),
+    url(/fonts/Roboto-Medium.ttf) format(truetype),
+    url(/fonts/Roboto-Bold.ttf) format(truetype);
 }
 
 /* =====================================================
@@ -41,32 +40,71 @@
 ===================================================== */
 
 /* Flex utilities */
-.flex { display: flex; }
-.flex-column { display: flex; flex-direction: column; }
-.flex-wrap { display: flex; flex-wrap: wrap; }
-.align-center { justify-content: center; align-items: center; }
+.flex {
+  display: flex;
+}
+.flex-column {
+  display: flex;
+  flex-direction: column;
+}
+.flex-wrap {
+  display: flex;
+  flex-wrap: wrap;
+}
+.align-center {
+  justify-content: center;
+  align-items: center;
+}
 
 /* Spacing utilities */
-.m-auto { margin: auto; }
-.p-30 { padding: var(--spacing-lg); }
-.mt-20 { margin-top: var(--spacing-md); }
+.m-auto {
+  margin: auto;
+}
+.p-30 {
+  padding: var(--spacing-lg);
+}
+.mt-20 {
+  margin-top: var(--spacing-md);
+}
 
 /* Text utilities */
-.fw-500 { font-weight: 500; }
-.fw-700 { font-weight: 700; }
-.fs-14 { font-size: var(--fs-small); }
-.fs-15 { font-size: var(--fs-nav); }
-.fs-16 { font-size: var(--fs-btn); }
-.fs-58 { font-size: var(--fs-main-title); }
-.fs-18 { font-size: var(--fs-main-dsc); }
-.opacity-70 { opacity: 0.7; }
+.fw-500 {
+  font-weight: 500;
+}
+.fw-700 {
+  font-weight: 700;
+}
+.fs-14 {
+  font-size: var(--fs-small);
+}
+.fs-15 {
+  font-size: var(--fs-nav);
+}
+.fs-16 {
+  font-size: var(--fs-btn);
+}
+.fs-58 {
+  font-size: var(--fs-main-title);
+}
+.fs-18 {
+  font-size: var(--fs-main-dsc);
+}
+.opacity-70 {
+  opacity: 0.7;
+}
 
 /* Display utilities */
-.hidden { display: none; }
+.hidden {
+  display: none;
+}
 
 /* Background color utilities */
-.bg-black { background-color: var(--black); }
-.bg-light-grey { background-color: var(--light-grey); }
+.bg-black {
+  background-color: var(--black);
+}
+.bg-light-grey {
+  background-color: var(--light-grey);
+}
 
 /* =====================================================
    BASE STYLES
@@ -84,6 +122,11 @@ body {
   margin: 0 auto;
 }
 
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
 /* =====================================================
    HEADER & NAVIGATION
 ===================================================== */
@@ -96,11 +139,8 @@ body {
 }
 
 .nav-bar {
-  /* Можно добавить в HTML классы .flex .align-center */
-  display: flex;
   height: 100px;
   justify-content: space-between;
-  align-items: center;
 }
 
 .logo {
@@ -112,12 +152,6 @@ body {
 .nav-list {
   display: flex;
   column-gap: 28px;
-}
-
-.nav-item {
-  /* При необходимости добавляйте утилиты .fw-700 и .fs-15 */
-  font-weight: 700;
-  font-size: var(--fs-nav);
 }
 
 .nav-link {
@@ -479,4 +513,20 @@ body {
 .footer-social-icons {
   display: flex;
   gap: 10px;
+}
+
+.click-animate {
+  animation: clickAnimation 0.15s ease forwards;
+}
+
+@keyframes clickAnimation {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(0.95);
+  }
+  100% {
+    transform: scale(1);
+  }
 }
