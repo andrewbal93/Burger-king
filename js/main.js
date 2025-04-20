@@ -5,14 +5,16 @@ const burgerBg = document.querySelector('#burger-bg')
 const ctaButtons = document.querySelectorAll('.cta-btn');
 
 
+// Toggle nav menu and swap icon
 navBtn.onclick = () => {
   if (nav.classList.toggle('open')) {
-    navBtnImg.src = './img/nav-close.svg'
+    navBtnImg.src = './img/nav-close.svg';
   } else {
-    navBtnImg.src = './img/nav-open.svg'
+    navBtnImg.src = './img/nav-open.svg';
   }
-}
+};
 
+// Set active nav-link on click
 const navLinks = document.querySelectorAll('.nav-link')
 
 navLinks.forEach((link) => {
@@ -22,7 +24,7 @@ navLinks.forEach((link) => {
   })
 })
 
-// Универсальная функция для эффекта анимации при клике
+// Universal click animation function
 function addClickAnimation(selector) {
   const elements = document.querySelectorAll(selector);
   elements.forEach(element => {
@@ -35,10 +37,11 @@ function addClickAnimation(selector) {
   });
 }
 
-// Применяем эффект к нужным элементам
+// Apply animation to CTA buttons and food items
 addClickAnimation('.cta-btn');
 addClickAnimation('.food-list-item');
 
+// Initialize AOS (animate on scroll)
 AOS.init({
   once: true,
   // disable: 'mobile',
