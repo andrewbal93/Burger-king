@@ -2,38 +2,31 @@
   .food-list {
     padding: 60px 0;
   }
-
   .food-list-content {
     grid-template-columns: 1fr 1fr;
     gap: 50px;
     padding: 0 50px;
   }
-
   .king-content {
     align-items: center;
     flex-direction: column;
-    gap: 0px;
+    gap: 0;
     padding-bottom: 70px;
   }
-
   .product-info .king {
     text-align: center;
     align-items: center;
   }
-
   .king-info {
     align-items: center;
     padding: 0;
   }
-
   .products-sct {
     padding-top: 100px;
   }
-
   .feedback-sct {
     padding: 80px 0;
   }
-
   .footer-sct {
     padding: 70px 0;
   }
@@ -43,12 +36,10 @@
   .hero-stc {
     padding-top: 100px;
   }
-
   .main-title {
     font-size: 50px;
     max-width: 400px;
   }
-
   .main-dsc {
     font-size: 17px;
     max-width: 350px;
@@ -65,46 +56,38 @@
   .hdr-btn {
     display: none;
   }
-
   .feedback-cnt {
-    display: flex;
-    align-items: center;
     flex-direction: column;
+    align-items: center;
     gap: 50px;
   }
-
   .feedback-info {
     padding-bottom: 0;
   }
-
   .feedback-ico {
     margin-bottom: 20px;
   }
-
   .download-menu {
     font-size: 35px;
   }
-
   .menu-cnt {
     padding: 30px 20px;
+    justify-content: center;
   }
-
   .footer-columns {
     display: none;
   }
-
   .footer-logo {
     display: none;
   }
-
   .footer-contacts {
     justify-content: start;
+    align-items: center;
+    gap: 15px;
   }
-
   .main-title {
     font-size: 40px;
   }
-
   .main-dsc {
     font-size: 15px;
     max-width: 260px;
@@ -121,11 +104,9 @@
   .burger-bg {
     display: none;
   }
-  
   nav.open .burger-bg {
     display: block;
   }
-  
   .nav-list {
     display: none;
     flex-direction: column;
@@ -137,59 +118,46 @@
     align-items: center;
     z-index: 15;
   }
-
   nav.open .nav-list {
     display: flex;
   }
-
   .nav-button {
     display: block;
   }
-
   .nav-link {
     font-size: 25px;
   }
-
   .download-menu {
     display: none;
   }
-
   .cta-btn.dwn-menu {
     display: block;
   }
-
   .cta-btn.dwn {
     display: none;
   }
-
   .menu-cnt {
     justify-content: center;
   }
-
   .product-dsc {
     opacity: 1;
     width: 230px;
   }
-
   .product-darkbg {
     display: block;
   }
-
   .product-info {
     z-index: 999;
   }
   .price-old {
     opacity: 1;
   }
-
   .hero-content .product-darkbg {
     display: block;
   }
-
   .hero-content {
     position: sticky;
   }
-
   .footer-cnt {
     flex-direction: column;
     align-items: center;
@@ -197,16 +165,13 @@
     padding-top: 40px;
     padding-bottom: 30px;
   }
-
   .footer-contacts {
     align-items: center;
     gap: 15px;
   }
-
   .footer-sct {
     padding-top: 0;
   }
-
   .footer-social {
     gap: 10px;
   }
@@ -217,47 +182,3 @@
     display: none;
   }
 }
-
-/* 
-  MOBILE
-  (navbar-err)
-
-    Header
-      - burger menu from pf
-    
-    Hero
-      - text smaller
-      - dark text bg
-
-    Food list
-      - smaller text
-      - one column = grid-template-columns: 1fr;
-
-    King - finished
-
-    Products
-      - smaller text
-      - dark text bg
-      - each second = background-position: right;
-
-    Feedback - finished
-
-    Dwn Menu
-      - text none
-      - button jc center
-      - button text change ???
-    
-    Footer
-      - columns none
-      - logo none
-      - fd column
-      - ai center
-      - padding- t40 b30
-      - height none
-      - gap 8
-      - .footer-contacts ai center , g 15
-      - .footer-social ai center
-      - large icons
-
-      :-)
-*/

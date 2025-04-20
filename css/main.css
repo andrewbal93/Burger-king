@@ -1,3 +1,6 @@
+/* =====================================================
+   VARIABLES
+===================================================== */
 :root {
   --light-grey: #312f30;
   --main-black: #1c1c1c;
@@ -5,20 +8,74 @@
   --low-orange: rgba(245, 117, 43, 0.5);
   --white: #fff;
   --black: #000;
+  
+  /* Spacing */
+  --spacing-xs: 5px;
+  --spacing-sm: 10px;
+  --spacing-md: 20px;
+  --spacing-lg: 30px;
+  --spacing-xl: 40px;
+  
+  /* Font sizes */
+  --fs-small: 14px;
+  --fs-nav: 15px;
+  --fs-btn: 16px;
+  --fs-main-title: 58px;
+  --fs-main-dsc: 18px;
 }
 
+/* =====================================================
+   FONT-FACE
+===================================================== */
 @font-face {
   font-family: 'Roboto';
-  src: local('Roboto'), url(/fonts/Roboto-Regular.ttf) format(truetype),
-    url(/fonts/Roboto-Medium.ttf) format(truetype),
-    url(/fonts/Roboto-Bold.ttf) format(truetype);
+  src: local('Roboto'),
+       url(/fonts/Roboto-Regular.ttf) format(truetype),
+       url(/fonts/Roboto-Medium.ttf) format(truetype),
+       url(/fonts/Roboto-Bold.ttf) format(truetype);
 }
 
+/* =====================================================
+   UTILITY CLASSES
+   (для flex, отступов, типографики, отображения и фонов)
+===================================================== */
+
+/* Flex utilities */
+.flex { display: flex; }
+.flex-column { display: flex; flex-direction: column; }
+.flex-wrap { display: flex; flex-wrap: wrap; }
+.align-center { justify-content: center; align-items: center; }
+
+/* Spacing utilities */
+.m-auto { margin: auto; }
+.p-30 { padding: var(--spacing-lg); }
+.mt-20 { margin-top: var(--spacing-md); }
+
+/* Text utilities */
+.fw-500 { font-weight: 500; }
+.fw-700 { font-weight: 700; }
+.fs-14 { font-size: var(--fs-small); }
+.fs-15 { font-size: var(--fs-nav); }
+.fs-16 { font-size: var(--fs-btn); }
+.fs-58 { font-size: var(--fs-main-title); }
+.fs-18 { font-size: var(--fs-main-dsc); }
+.opacity-70 { opacity: 0.7; }
+
+/* Display utilities */
+.hidden { display: none; }
+
+/* Background color utilities */
+.bg-black { background-color: var(--black); }
+.bg-light-grey { background-color: var(--light-grey); }
+
+/* =====================================================
+   BASE STYLES
+===================================================== */
 body {
   font-family: 'Roboto', sans-serif;
   color: var(--white);
   background-color: var(--main-black);
-  font-size: 14px;
+  font-size: var(--fs-small);
 }
 
 .container {
@@ -27,6 +84,9 @@ body {
   margin: 0 auto;
 }
 
+/* =====================================================
+   HEADER & NAVIGATION
+===================================================== */
 .header {
   background-image: url(../img/hero.jpg);
   background-repeat: no-repeat;
@@ -36,11 +96,13 @@ body {
 }
 
 .nav-bar {
+  /* Можно добавить в HTML классы .flex .align-center */
   display: flex;
   height: 100px;
   justify-content: space-between;
   align-items: center;
 }
+
 .logo {
   position: relative;
   top: 0;
@@ -51,15 +113,17 @@ body {
   display: flex;
   column-gap: 28px;
 }
+
 .nav-item {
+  /* При необходимости добавляйте утилиты .fw-700 и .fs-15 */
   font-weight: 700;
-  font-size: 15px;
+  font-size: var(--fs-nav);
 }
+
 .nav-link {
   color: var(--white);
   opacity: 0.7;
 }
-
 .nav-link.active {
   color: var(--white);
   opacity: 1;
@@ -68,11 +132,12 @@ body {
 .cta-btn {
   width: fit-content;
   font-weight: 500;
-  font-size: 16px;
-  background-color: #f6762c;
+  font-size: var(--fs-btn);
+  background-color: var(--orange);
   padding: 15px 37px;
   border-radius: 5px;
 }
+
 .cta-link {
   color: var(--white);
 }
@@ -85,26 +150,15 @@ body {
   right: 30px;
 }
 
-.burger-bg {
-  position: absolute;
-  height: 100vh;
-  width: 100vw;
-  right: 0;
-  top: 0;
-  background-color: var(--black);
-  opacity: 1;
-  display: none;
-  z-index: 14;
-}
-
-/*  */
-
+/* =====================================================
+   HERO SECTION
+===================================================== */
 .hero-stc {
   padding-top: 186px;
   padding-bottom: 242px;
 }
+
 .hero-content {
-  /* width: 45%; */
   max-width: 555px;
 }
 
@@ -115,6 +169,7 @@ body {
   top: 20%;
   left: 0;
   background-color: rgba(0, 0, 0, 0.7);
+  /* Для управления отображением можно использовать утилиту .hidden */
   display: none;
 }
 
@@ -122,30 +177,35 @@ body {
   font-weight: 500;
   margin-bottom: 7px;
 }
+
 .main-title {
   font-weight: 500;
-  font-size: 58px;
+  font-size: var(--fs-main-title);
   margin-bottom: 37px;
   max-width: 450px;
 }
+
 .main-dsc {
-  font-size: 18px;
+  font-size: var(--fs-main-dsc);
   color: rgba(255, 255, 255, 0.7);
   margin-bottom: 42px;
   max-width: 490px;
 }
 
-/*  */
-
+/* =====================================================
+   FOOD LIST SECTION
+===================================================== */
 .food-list {
   padding: 110px 0;
 }
+
 .food-list-content {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 31px;
   margin: 0 auto;
 }
+
 .food-list-item {
   display: flex;
   flex-direction: column;
@@ -154,24 +214,31 @@ body {
   border-radius: 20px;
   padding-bottom: 30px;
 }
+
 .food-img {
   border-radius: 20px 20px 0 0;
 }
+
 .food-item-title {
   font-weight: 500;
   font-size: 20px;
   padding-top: 28px;
   padding-bottom: 13px;
 }
+
 .food-item-dsc {
   max-width: 230px;
   margin: 0 auto;
   padding: 0 10px;
 }
 
+/* =====================================================
+   KING SECTION
+===================================================== */
 .king-sct {
   background-color: var(--light-grey);
 }
+
 .king-content {
   display: flex;
   gap: 158px;
@@ -189,22 +256,29 @@ body {
   padding-top: 165px;
   padding-bottom: 160px;
 }
+
 .product-title .king {
   font-size: 44px;
   margin-bottom: 24px;
 }
+
 .product-dsc .king {
   margin-bottom: 13px;
 }
 
+/* =====================================================
+   PRODUCTS SECTION
+===================================================== */
 .products-sct {
   padding-top: 150px;
 }
+
 .product-title {
   font-weight: 500;
   font-size: 30px;
   margin-bottom: 20px;
 }
+
 .product-dsc {
   font-size: 16px;
   color: var(--white);
@@ -219,12 +293,14 @@ body {
   align-items: baseline;
   margin-bottom: 11px;
 }
+
 .price {
   font-size: 20px;
   font-weight: 500;
   color: var(--orange);
   letter-spacing: 1.6px;
 }
+
 .price-old {
   font-size: 16px;
   opacity: 0.5;
@@ -265,8 +341,9 @@ body {
   justify-content: center;
 }
 
-/*  */
-
+/* =====================================================
+   FEEDBACK SECTION
+===================================================== */
 .feedback-sct {
   padding-top: 150px;
   padding-bottom: 195px;
@@ -279,6 +356,7 @@ body {
   text-align: center;
   margin: 0 auto;
 }
+
 .feedback-prt {
   width: 365px;
 }
@@ -287,36 +365,43 @@ body {
   max-width: 368px;
   padding-bottom: 43px;
 }
+
 .feedback-ico {
   width: 47px;
   margin-bottom: 37px;
 }
+
 .feedback-dsc {
   font-size: 16px;
   opacity: 0.7;
   margin-bottom: 27px;
 }
+
 .feedback-name {
   font-size: 24px;
   font-weight: 500;
   margin-bottom: 2px;
 }
+
 .feedback-national {
   font-size: 12px;
   font-weight: 500;
   opacity: 0.7;
 }
 
-/*  */
-
+/* =====================================================
+   MENU SECTION
+===================================================== */
 .menu-sct {
   background-color: var(--light-grey);
 }
+
 .menu-cnt {
   display: flex;
   justify-content: space-between;
   padding: 45px 20px;
 }
+
 .download-menu {
   font-size: 40px;
   font-weight: 500;
@@ -326,10 +411,14 @@ body {
   display: none;
 }
 
+/* =====================================================
+   FOOTER SECTION
+===================================================== */
 .footer-sct {
   padding-top: 86px;
   padding-bottom: 140px;
 }
+
 .footer-cnt {
   display: flex;
   justify-content: space-between;
@@ -337,6 +426,7 @@ body {
   padding-top: 40px;
   position: relative;
 }
+
 .footer-contacts {
   display: flex;
   flex-direction: column;
@@ -353,23 +443,28 @@ body {
   display: flex;
   gap: 7px;
 }
+
 .footer-web {
   display: flex;
   gap: 7px;
 }
+
 .footer-columns {
   display: flex;
   justify-content: space-between;
 }
+
 .footer-column {
   display: flex;
   flex-direction: column;
   gap: 15px;
 }
+
 .footer-title {
   font-size: 16px;
   font-weight: 500;
 }
+
 .footer-row {
   font-size: 12px;
   opacity: 0.8;
@@ -380,6 +475,7 @@ body {
   flex-direction: column;
   gap: 16px;
 }
+
 .footer-social-icons {
   display: flex;
   gap: 10px;

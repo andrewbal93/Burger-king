@@ -18,13 +18,12 @@
   <body>
     <header class="header">
       <div class="container">
-        <div class="nav-bar" >
-          <a href="#!" class="logo-link"
-            ><img src="./img/logo.png" alt="" class="logo"
-          /></a>
-
+        <div class="nav-bar flex align-center">
+          <a href="#!" class="logo-link">
+            <img src="./img/logo.png" alt="Logo" class="logo" />
+          </a>
           <nav class="nav" id="nav">
-            <ul class="nav-list" >
+            <ul class="nav-list flex">
               <li class="nav-item">
                 <a href="#!" class="nav-link active">HOME</a>
               </li>
@@ -41,29 +40,26 @@
                 <a href="#!" class="nav-link">SHOP</a>
               </li>
             </ul>
-            <div class="burger-bg" id="burger-bg"></div>
+            <div class="burger-bg hidden" id="burger-bg"></div>
           </nav>
-
           <div class="cta-btn hdr-btn" data-aos="zoom-in" data-aos-delay="700">
             <a href="#!" class="cta-link">ORDER NOW</a>
           </div>
-
-
           <button id="nav-btn" class="nav-button">
-            <img
-              id="nav-btn-img"
-              src="./img/nav-open.svg"
-              alt="burger-ico"
-            />
+            <img id="nav-btn-img" src="./img/nav-open.svg" alt="burger-ico" />
           </button>
         </div>
 
         <div class="hero-stc">
-          <div class="product-darkbg"></div>
+          <div class="product-darkbg hidden"></div>
           <div class="hero-content">
-            <p class="hero-slogan" data-aos="fade-right" data-aos-delay="200">FAST FOOD BURGERS</p>
-            <h1 class="main-title" data-aos="fade-right" data-aos-duration="500">The fastest food, instant hunger.</h1>
-            <p class="main-dsc" class="main-dsc" data-aos="fade-right" data-aos-delay="500">
+            <p class="hero-slogan" data-aos="fade-right" data-aos-delay="200">
+              FAST FOOD BURGERS
+            </p>
+            <h1 class="main-title" data-aos="fade-right" data-aos-duration="500">
+              The fastest food, instant hunger.
+            </h1>
+            <p class="main-dsc" data-aos="fade-right" data-aos-delay="500">
               Some food has looked so awful that it's looked like something that
               the dog's brought home, yet after one mouthful I've been left
               eating my thoughts, my words & my food and gone back for seconds.
@@ -80,44 +76,28 @@
       <div class="container">
         <div class="food-list-content">
           <div class="food-list-item" data-aos="flip-left" data-aos-duration="500">
-            <img
-              src="./img/food-list/food-list-1.jpg"
-              alt=""
-              class="food-img"
-            />
+            <img src="./img/food-list/food-list-1.jpg" alt="Chicken Paella" class="food-img" />
             <h3 class="food-item-title">Chicken Paella</h3>
             <p class="food-item-dsc">
-              We just don't make and sell food.Good food warms.
+              We just don't make and sell food. Good food warms.
             </p>
           </div>
           <div class="food-list-item" data-aos="flip-right" data-aos-duration="500">
-            <img
-              src="./img/food-list/food-list-2.jpg"
-              alt=""
-              class="food-img"
-            />
+            <img src="./img/food-list/food-list-2.jpg" alt="Taco Del Mar" class="food-img" />
             <h3 class="food-item-title">Taco Del Mar</h3>
             <p class="food-item-dsc">
-              Taco Del Mar brings the best out of Mexican cuisine with fresh.
+              Taco Del Mar brings the best out of Mexican cuisine with fresh ingredients.
             </p>
           </div>
           <div class="food-list-item" data-aos="flip-left" data-aos-duration="500">
-            <img
-              src="./img/food-list/food-list-3.jpg"
-              alt=""
-              class="food-img"
-            />
+            <img src="./img/food-list/food-list-3.jpg" alt="Bon Au Pain" class="food-img" />
             <h3 class="food-item-title">Bon Au Pain</h3>
             <p class="food-item-dsc">
               Bon Au Pain is a pioneer in the healthy fast food scene.
             </p>
           </div>
           <div class="food-list-item" data-aos="flip-right" data-aos-duration="500">
-            <img
-              src="./img/food-list/food-list-4.jpg"
-              alt=""
-              class="food-img"
-            />
+            <img src="./img/food-list/food-list-4.jpg" alt="Pizza Hut" class="food-img" />
             <h3 class="food-item-title">Pizza Hut</h3>
             <p class="food-item-dsc">
               Although the Pizza Hut Menu Prices have tumbled over the years.
@@ -129,16 +109,15 @@
 
     <section class="king-sct">
       <div class="container">
-        <div class="king-content">
-          <img src="./img/burger-king.png" alt="king-img" class="king-img" />
-
-          <div class="product-info king-info">
+        <div class="king-content flex">
+          <img src="./img/burger-king.png" alt="Burger King" class="king-img" />
+          <div class="product-info king-info flex-column">
             <h2 class="product-title king">Burger King</h2>
             <p class="product-dsc king">
               Together with McDonald’s, Burger King has grown to become
               synonymous with burgers in the US.
             </p>
-            <div class="price-block king">
+            <div class="price-block king flex">
               <p class="price king">$6</p>
               <p class="price king price-old">$8</p>
             </div>
@@ -153,112 +132,78 @@
     <section class="products-sct">
       <div class="container">
         <div class="products-cnt">
-          <div
-            class="product-item"
-            style="
-              background-image: url(./img/products/product-1.jpg);
-              justify-content: end;
-            "
-            data-aos="fade-right"
-          >
-
-          <div class="product-darkbg"></div>
-          <div class="product-info">
-            <h2 class="product-title">Dairy Queen</h2>
-            <p class="product-dsc">
-              Dairy Queen is one of the biggest fast-food.
-            </p>
-            <div class="price-block product">
-              <p class="price price-product">$4</p>
-              <p class="price price-old price-product">$6</p>
+          <div class="product-item" style="background-image: url(./img/products/product-1.jpg); justify-content: end;" data-aos="fade-right">
+            <div class="product-darkbg hidden"></div>
+            <div class="product-info">
+              <h2 class="product-title">Dairy Queen</h2>
+              <p class="product-dsc">
+                Dairy Queen is one of the biggest fast-food chains.
+              </p>
+              <div class="price-block product flex">
+                <p class="price price-product">$4</p>
+                <p class="price price-old price-product">$6</p>
               </div>
               <div class="cta-btn product">
                 <a href="#!" class="cta-link">ORDER NOW</a>
               </div>
             </div>
           </div>
-          <div
-          class="product-item"
-          style="
-              background-image: url(./img/products/product-2.jpg);
-              justify-content: start;
-              padding-left: 50px;
-              background-position: right;
-              "
-              data-aos="fade-left"
-          >
-          <div class="product-darkbg"></div>
-          <div class="product-info">
-            <h2 class="product-title">Pizza Hut</h2>
-            <p class="product-dsc">Although the Pizza Hut Menu Prices.</p>
-            <div class="price-block product">
-              <p class="price price-product">$3</p>
-              <p class="price price-old price-product">$7</p>
-            </div>
+          <div class="product-item" style="background-image: url(./img/products/product-2.jpg); justify-content: start; padding-left: 50px; background-position: right;" data-aos="fade-left">
+            <div class="product-darkbg hidden"></div>
+            <div class="product-info">
+              <h2 class="product-title">Pizza Hut</h2>
+              <p class="product-dsc">Although the Pizza Hut Menu Prices.</p>
+              <div class="price-block product flex">
+                <p class="price price-product">$3</p>
+                <p class="price price-old price-product">$7</p>
+              </div>
               <div class="cta-btn product">
                 <a href="#!" class="cta-link">ORDER NOW</a>
               </div>
             </div>
           </div>
-          <div
-          class="product-item"
-          style="
-              background-image: url(./img/products/product-3.jpg);
-              justify-content: end;
-              "
-              data-aos="fade-right"
-          >
-          <div class="product-darkbg"></div>
-          <div class="product-info">
-            <h2 class="product-title">Burger King</h2>
-            <p class="product-dsc">Together with McDonald’s, Burger King.</p>
-            <div class="price-block product">
-              <p class="price price-product">$5</p>
-              <p class="price price-old price-product">$6</p>
-            </div>
-            <div class="cta-btn product">
-              <a href="#!" class="cta-link">ORDER NOW</a>
+          <div class="product-item" style="background-image: url(./img/products/product-3.jpg); justify-content: end;" data-aos="fade-right">
+            <div class="product-darkbg hidden"></div>
+            <div class="product-info">
+              <h2 class="product-title">Burger King</h2>
+              <p class="product-dsc">Together with McDonald’s, Burger King.</p>
+              <div class="price-block product flex">
+                <p class="price price-product">$5</p>
+                <p class="price price-old price-product">$6</p>
+              </div>
+              <div class="cta-btn product">
+                <a href="#!" class="cta-link">ORDER NOW</a>
+              </div>
             </div>
           </div>
-        </div>
-        <div
-        class="product-item"
-        style="
-              background-image: url(./img/products/product-4.jpg);
-              justify-content: start;
-              padding-left: 50px;
-              background-position: right;
-              "
-              data-aos="fade-left"
-          >
-          <div class="product-darkbg"></div>
-          <div class="product-info">
-            <h2 class="product-title">Papa John’s</h2>
-            <p class="product-dsc">
-              Papa John’s is one of the most popular fast-food.
-            </p>
-            <div class="price-block product">
-              <p class="price price-product">$6</p>
-              <p class="price price-old price-product">$8</p>
-            </div>
-            <div class="cta-btn product">
-              <a href="#!" class="cta-link">ORDER NOW</a>
+          <div class="product-item" style="background-image: url(./img/products/product-4.jpg); justify-content: start; padding-left: 50px; background-position: right;" data-aos="fade-left">
+            <div class="product-darkbg hidden"></div>
+            <div class="product-info">
+              <h2 class="product-title">Papa John’s</h2>
+              <p class="product-dsc">
+                Papa John’s is one of the most popular fast-food chains.
+              </p>
+              <div class="price-block product flex">
+                <p class="price price-product">$6</p>
+                <p class="price price-old price-product">$8</p>
+              </div>
+              <div class="cta-btn product">
+                <a href="#!" class="cta-link">ORDER NOW</a>
+              </div>
             </div>
           </div>
-        </div>
         </div>
       </div>
     </section>
     
     <section class="feedback-sct">
       <div class="container">
-        <div class="feedback-cnt">
-          <img class="feedback-prt" src="./img/feedback/Group76.png" alt="" />
+        <div class="feedback-cnt flex">
+          <img class="feedback-prt" src="./img/feedback/Group76.png" alt="Feedback" />
           <div class="feedback-info">
-            <img class="feedback-ico" src="./img/feedback/quotes.svg" alt="" />
+            <img class="feedback-ico" src="./img/feedback/quotes.svg" alt="Quotes" />
             <p class="feedback-dsc">
-              Thanks a lot for the prompt service. Really appreciate. Excellence
-              taste in Every Bite.Add a joy of best Taste. Foodie Moments.
+              Thanks a lot for the prompt service. Really appreciate. Excellence taste in Every Bite. Add a joy of best Taste. Foodie Moments.
             </p>
             <p class="feedback-name">Adele A. McNeill</p>
             <p class="feedback-national">AMIRICAN</p>
@@ -269,7 +214,7 @@
 
     <section class="menu-sct">
       <div class="container">
-        <div class="menu-cnt">
+        <div class="menu-cnt flex">
           <h2 class="download-menu">Download Our Menu</h2>
           <button class="cta-btn dwn" data-aos="zoom-in">DOWNLOAD</button>
           <button class="cta-btn dwn-menu" data-aos="zoom-in">Download Menu</button>
@@ -279,26 +224,22 @@
 
     <footer class="footer-sct">
       <div class="container">
-        <div class="footer-cnt">
-          <div class="footer-contacts">
-            <a href="#!" class="logo-link"
-              ><img src="./img/logo.png" alt="" class="logo footer-logo"
-            /></a>
-            <div class="footer-mail">
-              <img
-                src="./img/footer/email.svg"
-                alt=""
-                class="footer-mail-ico"
-              />
+        <div class="footer-cnt flex">
+          <div class="footer-contacts flex-column">
+            <a href="#!" class="logo-link">
+              <img src="./img/logo.png" alt="Logo" class="logo footer-logo" />
+            </a>
+            <div class="footer-mail flex">
+              <img src="./img/footer/email.svg" alt="Email" class="footer-mail-ico" />
               <p class="footer-mail-text">fastfood_usa@gmail.com</p>
             </div>
-            <div class="footer-web">
-              <img src="./img/footer/web.svg" alt="" class="footer-web-ico" />
+            <div class="footer-web flex">
+              <img src="./img/footer/web.svg" alt="Web" class="footer-web-ico" />
               <p class="footer-web-text">www.fastfood_usa.com</p>
             </div>
           </div>
           <div class="footer-columns">
-            <div class="footer-column">
+            <div class="footer-column flex-column">
               <h4 class="footer-title">Our menu</h4>
               <p class="footer-row">Breakfast</p>
               <p class="footer-row">Lunce</p>
@@ -306,7 +247,7 @@
             </div>
           </div>
           <div class="footer-columns">
-            <div class="footer-column">
+            <div class="footer-column flex-column">
               <h4 class="footer-title">Information</h4>
               <p class="footer-row">About us</p>
               <p class="footer-row">Testimonial</p>
@@ -314,36 +255,20 @@
             </div>
           </div>
           <div class="footer-columns">
-            <div class="footer-column">
+            <div class="footer-column flex-column">
               <h4 class="footer-title">Useful Links</h4>
               <p class="footer-row">Services</p>
               <p class="footer-row">Support</p>
               <p class="footer-row">Conditions</p>
             </div>
           </div>
-          <div class="footer-social">
+          <div class="footer-social flex-column">
             <h4 class="footer-title">Social Handles</h4>
-            <div class="footer-social-icons">
-              <img
-                src="./img/footer/facebook.png"
-                alt=""
-                class="footer-social-ico"
-              />
-              <img
-                src="./img/footer/twitter.png"
-                alt=""
-                class="footer-social-ico"
-              />
-              <img
-                src="./img/footer/instagram.png"
-                alt=""
-                class="footer-social-ico"
-              />
-              <img
-                src="./img/footer/linkedin.png"
-                alt=""
-                class="footer-social-ico"
-              />
+            <div class="footer-social-icons flex">
+              <img src="./img/footer/facebook.png" alt="Facebook" class="footer-social-ico" />
+              <img src="./img/footer/twitter.png" alt="Twitter" class="footer-social-ico" />
+              <img src="./img/footer/instagram.png" alt="Instagram" class="footer-social-ico" />
+              <img src="./img/footer/linkedin.png" alt="LinkedIn" class="footer-social-ico" />
             </div>
           </div>
         </div>
