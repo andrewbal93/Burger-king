@@ -120,6 +120,59 @@
 @media (max-width: 600px) {
   .burger-bg {
     display: none;
+    background-color: black;
+    opacity: 0.9;
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 70%;
+    height: 70%;
+    z-index: 10;
+    border-radius: 0 0 0 20px;
+  }
+
+  .burger-menu {
+    display: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 70%;
+    height: 70%;
+    z-index: 10;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 20px;
+  }
+
+  .burger-menu .burger {
+    display: block;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    z-index: 15;
+  }
+
+  .burger-menu .burger span {
+  }
+
+  nav.open .burger-bg {
+    display: block;
+  }
+
+  .burger-menu {
+    display: block;
+  }
+
+  .nav-list {
+    display: none;
+    flex-direction: column;
+    gap: 30px;
+    position: absolute;
+    right: 25%;
+    width: 50%;
+    top: 15%;
+    align-items: center;
+    z-index: 15;
   }
   
   nav.open .burger-bg {
@@ -140,6 +193,7 @@
 
   nav.open .nav-list {
     display: flex;
+    right: 15%;
   }
 
   .nav-button {
